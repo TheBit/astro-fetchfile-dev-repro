@@ -1,0 +1,13 @@
+---
+import Counter from "../components/Counter.tsx";
+---
+<html lang="en">
+  <head><meta charset="utf-8" /><title>fetchFile dev repro</title></head>
+  <body>
+    <h1>Hello</h1>
+    <Counter client:load />
+    <script>
+      console.log("hoisted script");
+    </script>
+  </body>
+</html>
